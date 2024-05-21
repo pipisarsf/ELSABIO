@@ -1,0 +1,47 @@
+<!-- Página de carga de contenidos -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Instituto el Sabio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="form-body">
+        <img src="assets/images/logo.png" alt="logo institucional">
+        <p class="text">Carga de Contenidos</p>
+        <form class="opciones-form" action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="materia">Materia:</label>
+            <select name="materia" id="materia" required>
+                <option value="">Seleccione una materia</option>
+                <!-- Las opciones se llenarán dinámicamente desde JavaScript -->
+            </select>
+            <br>
+            
+            <label for="alumno">Estudiante:</label>
+            <select name="alumno" id="alumno" required>
+                <option value="">Seleccione el estudiante</option>
+            </select>
+            <br>
+        
+
+            <label for="contenido">Contenido:</label>
+            <select name="contenido" id="contenido" required>
+                <option value="">Seleccione un contenido</option>
+                <!-- Las opciones se llenarán dinámicamente desde JavaScript -->
+            </select>
+            <br>
+
+            <label for="estadoContenido">Nivel de Desempeño:</label>
+            <select name="estadoContenido" id="estadoContenido" required>
+                <option value="">Seleccione un contenido</option>
+                <!-- Las opciones se llenarán dinámicamente desde JavaScript -->
+            </select>
+            <br>
+
+            <button type="submit">Subir Contenido</button>
+        </form>
+    </div>
+   
+</body>
+</html>
